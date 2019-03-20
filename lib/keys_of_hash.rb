@@ -1,6 +1,6 @@
 class Hash
   def keys_of(*args)
-    collect {|k,v| k if args[k] == v}
+    collect {|k,v| k if args[k] = v}
 
 
 
