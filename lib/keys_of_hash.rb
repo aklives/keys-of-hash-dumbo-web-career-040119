@@ -3,6 +3,6 @@ class Hash
     map {|k, v| args == v ?  k : nil}.compact
 
 
-  
+
   end
 end
