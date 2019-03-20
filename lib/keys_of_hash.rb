@@ -1,6 +1,11 @@
 class Hash
   def keys_of(*args)
-    collect {|k,v| k if args[k] = v}
+    arr = []
+    each do |k,v|
+      if args = v
+        arr << k
+      end
+    end
 
 
 
