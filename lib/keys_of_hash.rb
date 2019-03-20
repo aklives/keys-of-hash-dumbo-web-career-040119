@@ -1,6 +1,6 @@
 class Hash
   def keys_of(*args)
-    map {|k, v| args == v ?  k : nil}.compact
+    args.collect {k if args[k] = v}
 
 
 
