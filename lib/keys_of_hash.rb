@@ -1,10 +1,8 @@
 class Hash
   def keys_of(*args)
     arr = []
-    each do |k,v|
-      if args = v
-        arr << k
-      end
+    args.each do |arg|
+      map {|key, value| arg.include?(value) ? (key << arr) : nil }
     end
 
 
