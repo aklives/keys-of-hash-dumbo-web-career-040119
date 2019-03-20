@@ -1,5 +1,9 @@
 class Hash
   def keys_of(arguments*)
-    # code goes here
+    arr = []
+    map {|k, v| if arguments.include? v 
+            arr << k}
+       
+  return arr    
   end
 end
