@@ -1,9 +1,8 @@
 class Hash
   def keys_of(*args)
-    arr = []
-    map {|k, v| args == v ? arr << k : nil}
+    map {|k, v| args == v ?  k : nil}.compact
 
 
-  return arr
+  
   end
 end
