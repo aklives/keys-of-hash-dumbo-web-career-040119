@@ -5,6 +5,7 @@ class Hash
       if args.include?(value)
         arr << key
       end
+    end
 
 
 
