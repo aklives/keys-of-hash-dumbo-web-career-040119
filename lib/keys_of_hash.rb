@@ -1,7 +1,7 @@
 class Hash
   def keys_of(*arguments)
     arr = []
-    map {|k, v| if arguments.include?(v) ? k : nil}
+    map {|k, v| arguments.include?(v) ? k : nil}
 
 
 
