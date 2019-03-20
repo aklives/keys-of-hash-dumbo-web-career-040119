@@ -4,6 +4,6 @@ class Hash
     map {|k, v| args == v ? arr << k : nil}
 
 
-
+  return arr
   end
 end
